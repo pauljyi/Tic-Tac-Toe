@@ -4,9 +4,17 @@ table tr td{
   height: 200px;
 }
 
+table{
+  margin: auto;
+}
+
 #field0 img{
-    /*visibility: hidden;*/
     position: relative;
     z-index:-1;
-    /*display: block;*/
+}
+
+body{
+  background: url(../images/splatter.jpg) no-repeat;
+  background-position: -5% -250%;
+
 }
