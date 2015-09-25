@@ -1,20 +1,100 @@
+@font-face {
+  font-family: paint;
+  /*src: url(../fonts/paint1.ttf);*/
+  src: url(../fonts/paint2.otf);
+}
+
 table tr td{
   border: 2px solid black;
   width: 200px;
   height: 200px;
+  z-index: 10000;
+
 }
 
 table{
   margin: auto;
+  visibility: hidden;
+  z-index: 10000;
 }
 
-#field0 img{
-    position: relative;
-    z-index:-1;
+body {
+  background: url(../images/splatter.jpg) no-repeat fixed;
+  background-position: -5px 560px;
+  height: auto;
+  z-index:-10000
 }
 
-body{
-  background: url(../images/splatter.jpg) no-repeat;
-  background-position: -5% -250%;
+#form {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  vertical-align: middle;
+  margin-top:100px;
+  padding-top: 100px;
+}
 
+form {
+  width:200px;
+  height:auto;
+  vertical-align: middle;
+  margin: auto;
+  text-align: center;
+  /*font-family: paint;*/
+}
+
+h1 {
+  font-family: paint;
+  width:inherit;
+}
+
+#submit{
+  margin:0 20% 0 20%;
+  width:auto;
+  margin-top: 10px;
+  font-family: paint;
+  border-radius: .5em;
+}
+
+
+div.player1name {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  text-align: left;
+  height:auto;
+  width:300px;
+  visibility:hidden;
+  z-index: -10;
+
+}
+
+div.player2name {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  text-align: left;
+  height:auto;
+  width:300px;
+  visibility:hidden;
+  z-index: -10;
+}
+
+#p1win{
+  display: none;
+}
+#p2win{
+  display: none;
+}
+
+label{
+  font-family:paint;
+  margin-top:10px;
+  padding-top: 40px;
+}
+
+input {
+  border-radius: .5em;
+  margin-top:10px;
+  display:inline-block;
 }
